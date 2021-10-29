@@ -1,106 +1,83 @@
-import React from "react";
-import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
+import * as React from "react";
+import { View, Text, Image, StatusBar,TextInput, TouchableOpacity,StyleSheet,ImageBackground,Dimensions } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen'; 
+import ImagedCarouselCard from "react-native-imaged-carousel-card"; 
+import PaperOnboarding, {PaperOnboardingItemType} from "@gorhom/paper-onboarding";
 
 export default function Login(params) {
   const navigation = params.navigation;
   return (
-    <View
-      style={{
-        backgroundColor: "white",
-        flex: 1,
-        paddingHorizontal: 20,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Image
-        style={{
-          transform: [{ rotate: "45deg" }],
-          borderRadius: 18,
-          marginBottom: 60,
-          width: 210,
-          height: 210,
-        }}
-        source={{
-          uri: "https://media.istockphoto.com/photos/two-professional-male-cyclists-riding-their-racing-bicycles-in-the-picture-id1303246662?b=1&k=20&m=1303246662&s=170667a&w=0&h=mKFt2aV7_FQQFP8OJrL2-cWIRddbo_f6FXEQdf_ZHv8=",
-        }}
-      />
-      <Text style={{ fontSize: 25, color: "grey" }}>Welcome to</Text>
-      <Text style={{ fontSize: 34, fontWeight: "bold" }}>Power Bike Shop</Text>
-      {/* <View style={{}}>
-        <TextInput
-          style={{
-            padding: 15,
-            borderRadius: 10,
-            borderWidth: 0.7,
-            paddingHorizontal: 60,
-          }}
-          placeholder="Enter your username"
-        />
-      </View> */}
-      {/* <View style={{ marginTop: 10,}}>
-        <TextInput
-          secureTextEntry={true}
-          onChangeText={(
-            e
-          )=> {
-            console.log(e)
-          }}
-          style={{
-            padding: 15,
-            borderRadius: 10,
-            borderWidth: 0.7,
-            paddingHorizontal: 60,
-          }}
-          placeholder="Enter your password"
-        />
-      </View> */}
-      <TouchableOpacity
+    <View style={{ flex:1}}>
+    <View>
+     <Text style={{ color: '#080A50', fontWeight:"bolder",fontSize:43,textAlign:"center",marginTop:10}}>Kew<Text style={{color:"#f03e3e",fontSize:43}}>s</Text></Text></View>
+        <StatusBar hidden={true} />
+        <View style={{flexDirection:"row"}}>
+         <View style={styles.container2}>
+        <Image source={require('./pngegg.png')} style={{width:20,height:20, alignSelf:"center", marginTop:10,}}/>
+        
+</View>
+        <View style={styles.container2}>
+        <Image source={require('./pngegg.png')} style={{width:20,height:20, alignSelf:"center", marginTop:10,}}/>
+        </View></View>
+        <View style={styles.container1}>
+        <Image source={require('./pngegg.png')} style={{width:300,height:230, alignSelf:"center", marginTop:30}}/>
+        </View>
+       
+
+
+        <Text style={{ color: '#080A50', fontWeight:"bolder",fontSize:30,textAlign:"center"}}>Find your latest &</Text>
+        <Text style={{ color: '#080A50', fontWeight:"bolder",fontSize:20,textAlign:"center"}}> Stylish Gadgets here </Text>
+        
+        
+     <TouchableOpacity
         onPress={() => {
           navigation.navigate("Home");
         }}
         style={{
-          padding: 15,
-          paddingHorizontal: 80,
-          marginTop: 10,
+          alignSelf:"center",
+          padding: 6,
+          paddingHorizontal: 70,
+          width:290,
+          marginTop: 30,
           alignItems: "center",
           borderRadius: 10,
           flexDirection: "row",
-          backgroundColor: "rgb(240, 241, 242)",
+          backgroundColor: "#080A50",
         }}
       >
-        <AntDesign name="google" size={24} color="rgb(256,100,10)" />
-        <Text style={{ paddingLeft: 10, color:"black" }}>Login with Gmail</Text>
-      </TouchableOpacity>
-
-
-
-      <TouchableOpacity
-        onPress={() => {
-          navigation.navigate("Home");
-        }}
-        style={{
-          padding: 15,
-          paddingHorizontal: 80,
-          marginTop: 10,
-          alignItems: "center",
-          borderRadius: 10,
-          flexDirection: "row",
-          backgroundColor: "black",
-        }}
-      >
-        <AntDesign name="apple1" size={24} color="white" />
-        <Text style={{ paddingLeft: 10, color: "white" }}>Login with Apple</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={{marginTop:15,}}>
-      <Text>
-      Not a member? 
-      <Text style={{color:"orange"}}>SignUp</Text>
       
-      </Text>
-      
+        <Text style={{ color: "white" ,alignSelf:"center",textAlign:"center", fontSize:23,}}>Get started</Text>
       </TouchableOpacity>
     </View>
   );
 }
+
+
+
+const styles = StyleSheet.create({
+  
+  container1: {
+    backgroundColor: '#080A50',
+    height: hp('35%'),
+    width: wp('74%'),
+   alignSelf:"center",
+    marginTop:30,
+    marginBottom:90,
+    borderRadius:500,
+  },
+
+
+
+
+   container2: {
+    backgroundColor: '#080A50',
+    height: hp('5%'),
+    width: wp('10%'),
+    alignSelf:"center",
+    borderRadius:500,
+  }
+});
