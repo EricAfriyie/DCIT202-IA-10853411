@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   StyleSheet,
   Image,
-  SafeAreaView,
+ 
 } from 'react-native';
 import { Ionicons, FontAwesome, AntDesign } from '@expo/vector-icons';
 
@@ -79,7 +79,7 @@ export default function CartList(params) {
               textAlign: 'center',
               fontWeight: 'bolder',
             }}>
-            Buzzaro Bike
+           Laptop
           </Text>
           <Text
             style={{
@@ -87,7 +87,7 @@ export default function CartList(params) {
               textAlign: 'center',
               fontWeight: 'bolder',
             }}>
-            Urban Bike
+            Acer Predator
           </Text>
 
           <Text style={{ textAlign: 'center' }}>
@@ -132,13 +132,14 @@ export default function CartList(params) {
             <View>
               <Image
                 style={{
-                  width: 130,
+                  width: 90,
                   marginTop: 15,
+                  
 
                   height: 100,
                   resizeMode: 'stretch',
                 }}
-                source={require('./pictures/HpOmen.png')}
+                source={require('./pictures/HuaweiP20Lite.png')}
               />
             </View>
           </View>
@@ -154,7 +155,7 @@ export default function CartList(params) {
               textAlign: 'center',
               fontWeight: 'bolder',
             }}>
-            subub
+            Phone
           </Text>
           <Text
             style={{
@@ -162,7 +163,7 @@ export default function CartList(params) {
               textAlign: 'center',
               fontWeight: 'bolder',
             }}>
-            Buzzaro Bike
+            Huawei
           </Text>
 
           <Text style={{ textAlign: 'center' }}>
@@ -225,7 +226,7 @@ export default function CartList(params) {
                 textAlign: 'center',
                 fontWeight: 'bolder',
               }}>
-              Bike
+              Laptop
             </Text>
 
             <Text
@@ -235,7 +236,7 @@ export default function CartList(params) {
                 fontWeight: 'bolder',
                 marginLeft: 5,
               }}>
-              Buzzaro Bike
+             Hp Omen
             </Text>
 
             <Text style={{ textAlign: 'center' }}>
