@@ -8,6 +8,8 @@ import {
   Image,
 } from 'react-native';
 import { Ionicons, FontAwesome, AntDesign } from '@expo/vector-icons';
+import Carousel from '../components/Carousel';
+import { dummyData } from '../data/data';
 
 import ImagedCarouselCard from 'react-native-imaged-carousel-card';
 
@@ -18,7 +20,7 @@ export default function Home(params) {
       style={{
         backgroundColor: 'white',
         flex: 1,
-        paddingTop: 50,
+        paddingTop: 25,
         paddingHorizontal: 20,
       }}>
       <View
@@ -58,25 +60,9 @@ export default function Home(params) {
         </View>
       </View>
 
-      <View
-        style={{
-          width: 320,
-          height: 200,
-          backgroundColor: 'rgb(240, 241, 242)',
-          marginTop: 20,
-          borderRadius: 16,
-          marginBottom: 10,
-        }}>
-        <ImagedCarouselCard
-          width={320}
-          height={200}
-          text="Buy Laptops and Services Here"
-          shadowColor="#051934"
-          source={{
-            uri: 'https://images.unsplash.com/photo-1501147830916-ce44a6359892?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmlrZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-          }}
-        />
-      </View>
+     <View>
+            <Carousel data = {dummyData}/>
+        </View>
 
       <View
         style={{
@@ -84,7 +70,9 @@ export default function Home(params) {
           justifyContent: 'space-between',
           alignItems: 'center',
         }}>
-        <TouchableOpacity style={styles.btn}  onPress={() => {
+        <TouchableOpacity
+          style={styles.btn}
+          onPress={() => {
             navigation.navigate('PopularProducts');
           }}>
           <Image
@@ -104,9 +92,11 @@ export default function Home(params) {
           </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.btn }  onPress={() => {
+        <TouchableOpacity
+          style={styles.btn}
+          onPress={() => {
             navigation.navigate('Phones');
-          }} >
+          }}>
           <Image
             source={require('./pictures/phonesale.png')}
             style={{ height: 30, width: 40 }}
@@ -114,7 +104,9 @@ export default function Home(params) {
           <Text>Phone</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.btn}  onPress={() => {
+        <TouchableOpacity
+          style={styles.btn}
+          onPress={() => {
             navigation.navigate('Desktops');
           }}>
           <Image
@@ -126,9 +118,10 @@ export default function Home(params) {
       </View>
 
       <View style={{ flexDirection: 'row', marginBottom: 10, marginTop: 15 }}>
-        <TouchableOpacity onPress={() => {
-          navigation.navigate('PopularProducts');
-        }}>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate('PopularProducts');
+          }}>
           <Text
             style={{
               marginRight: 135,
@@ -179,12 +172,14 @@ export default function Home(params) {
             padding: 5,
           }}>
           <View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => {
+            navigation.navigate('PopularProducts');
+          }}>
               <Image
                 style={{
                   width: 130,
                   marginTop: 7,
-                  alignSelf:"center",
+                  alignSelf: 'center',
 
                   height: 100,
                   resizeMode: 'stretch',
@@ -205,32 +200,51 @@ export default function Home(params) {
                     height: 60,
                     margingTop: 10,
                     borderRadius: 15,
-                    
                   }}>
-                 
                   <Text
                     style={{
                       color: 'rgb(174, 175, 176)',
                       fontWeight: 'bolder',
-                      textAlign:"center"
-                    
+                      textAlign: 'center',
                     }}>
                     Acer Predator
                   </Text>
-                  
-                 
-                  <View style={{flexDirection:"row", marginTop:10,}}>
-                  <Text style={{marginLeft:27}}>
-                    <Text style={{ color: 'orange' }}>$</Text>
-                    <Text style={{ color: 'black', fontWeight: 'bolder',}}>
-                      7000.00
+
+                  <View style={{ flexDirection: 'row', marginTop: 10 }}>
+                    <Text style={{ marginLeft: 27 }}>
+                      <Text style={{ color: 'orange' }}>$</Text>
+                      <Text style={{ color: 'black', fontWeight: 'bolder' }}>
+                        7000.00
+                      </Text>
                     </Text>
-                  </Text>
-                   <FontAwesome name="chevron-right" size={15} style={{marginLeft:20,marginTop:3}}/>
+                    <FontAwesome
+                      name="chevron-right"
+                      size={15}
+                      style={{ marginLeft: 20, marginTop: 3 }}
+                    />
                   </View>
-             
                 </View>
               </View>
+            </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              marginTop: 7,
+              backgroundColor: '#fd9843',
+              alignSelf: 'center',
+              borderRadius: 10,
+              paddingVertical: 5 ,
+              paddingHorizontal: 20,
+            }}>
+            <TouchableOpacity>
+              <Text
+                style={{
+                  color: '#fff',
+                  fontWeight: 'bold',
+                  textAlign: 'center',
+                }}>
+                Add to Cart
+              </Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -250,7 +264,7 @@ export default function Home(params) {
                 style={{
                   width: 130,
                   marginTop: 7,
-                  alignSelf:"center",
+                  alignSelf: 'center',
                   height: 100,
                   resizeMode: 'stretch',
                 }}
@@ -272,16 +286,40 @@ export default function Home(params) {
                   }}>
                   Hp Omen
                 </Text>
-   <View style={{flexDirection:"row", marginTop:10}}>
-                <Text style={{ textAlign: 'center', marginLeft:27 }}>
-                  <Text style={{ color: 'orange' }}>$</Text>
-                  <Text style={{ color: 'black', fontWeight: 'bolder' }}>
-                    1700.00
+                <View style={{ flexDirection: 'row', marginTop: 10 }}>
+                  <Text style={{ textAlign: 'center', marginLeft: 27 }}>
+                    <Text style={{ color: 'orange' }}>$</Text>
+                    <Text style={{ color: 'black', fontWeight: 'bolder' }}>
+                      1700.00
+                    </Text>
                   </Text>
-                </Text>
-                 <FontAwesome name="chevron-right" size={15} style={{marginLeft:20,marginTop:3}}/>
+                  <FontAwesome
+                    name="chevron-right"
+                    size={15}
+                    style={{ marginLeft: 20, marginTop: 3 }}
+                  />
                 </View>
               </View>
+            </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              marginTop: 7 ,
+              backgroundColor: '#fd9843',
+              alignSelf: 'center',
+              borderRadius: 10,
+              paddingVertical: 5,
+              paddingHorizontal: 20,
+            }}>
+            <TouchableOpacity>
+              <Text
+                style={{
+                  color: '#fff',
+                  fontWeight: 'bold',
+                  textAlign: 'center',
+                }}>
+                Add to Cart
+              </Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -292,7 +330,7 @@ export default function Home(params) {
           flexDirection: 'row',
           justifyContent: 'space-between',
           alignItems: 'center',
-          marginTop: 55,
+          marginTop: 3,
         }}>
         <TouchableOpacity>
           <Ionicons
@@ -316,16 +354,15 @@ export default function Home(params) {
           onPress={() => {
             navigation.navigate('cartlist');
           }}>
-          <FontAwesome name="shopping-bag" size={22} style={{  }} />
+          <FontAwesome name="shopping-bag" size={22} style={{}} />
         </TouchableOpacity>
 
-         <TouchableOpacity onPress={() => {
+        <TouchableOpacity
+          onPress={() => {
             navigation.navigate('Service');
           }}>
-            <FontAwesome name="comments-o" size={28} style={{}} />
-          </TouchableOpacity>
-
-        
+          <FontAwesome name="comments-o" size={28} style={{}} />
+        </TouchableOpacity>
       </View>
     </View>
   );
