@@ -103,6 +103,7 @@ export default function Desktops(params) {
               <FontAwesome name="chevron-down" size={16} />
             </View>
           </TouchableOpacity>
+
         </View>
 
         <View
@@ -178,7 +179,30 @@ export default function Desktops(params) {
                 </View>
               </TouchableOpacity>
             </View>
+
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
+              </TouchableOpacity>
+            </View>
           </View>
+
+
 
           <View
             style={{
@@ -231,6 +255,26 @@ export default function Desktops(params) {
                     />
                   </View>
                 </View>
+              </TouchableOpacity>
+            </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -309,6 +353,26 @@ export default function Desktops(params) {
                 </View>
               </TouchableOpacity>
             </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
+              </TouchableOpacity>
+            </View>
           </View>
 
           <View
@@ -362,6 +426,26 @@ export default function Desktops(params) {
                     />
                   </View>
                 </View>
+              </TouchableOpacity>
+            </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -440,6 +524,26 @@ export default function Desktops(params) {
                 </View>
               </TouchableOpacity>
             </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
+              </TouchableOpacity>
+            </View>
           </View>
 
           <View
@@ -493,6 +597,26 @@ export default function Desktops(params) {
                     />
                   </View>
                 </View>
+              </TouchableOpacity>
+            </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
