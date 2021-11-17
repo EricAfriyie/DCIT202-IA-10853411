@@ -7,7 +7,7 @@ import {
   StyleSheet,
   TextInput,
   Image,
-  ScrollView,
+ ScrollView
 } from 'react-native';
 import { Ionicons, FontAwesome, AntDesign } from '@expo/vector-icons';
 import ImageView from 'react-native-image-view';
@@ -15,12 +15,11 @@ import ImageView from 'react-native-image-view';
 export default function PopularProducts(params) {
   const navigation = params.navigation;
   return (
-    <View style={{ paddingHorizontal: 20 }}>
-     
+    
+      <View style={{ paddingHorizontal: 20 }}>
+    <ScrollView>
         <View
-        
           style={{
-            
             marginTop: 30,
             flexDirection: 'row',
             justifyContent: 'space-between',
@@ -50,15 +49,15 @@ export default function PopularProducts(params) {
           <View
             style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
             <TouchableOpacity
-            onPress={() => {
-              navigation.navigate('cartlist');
-            }}>
-            <FontAwesome
-              name="shopping-bag"
-              size={22}
-              style={{ marginRight: 10,  }}
-            />
-          </TouchableOpacity>
+              onPress={() => {
+                navigation.navigate('cartlist');
+              }}>
+              <FontAwesome
+                name="shopping-bag"
+                size={22}
+                style={{ marginRight: 10 }}
+              />
+            </TouchableOpacity>
           </View>
         </View>
 
@@ -81,36 +80,31 @@ export default function PopularProducts(params) {
             style={{ padding: 20, marginTop: 10 }}
           />
         </View>
-  
+
         <View
           style={{
             flexDirection: 'row',
             justifyContent: 'space-between',
             marginTop: 15,
           }}>
-
+          <TouchableOpacity>
+            <Text> 40 laptops in-stock</Text>
+          </TouchableOpacity>
 
           <TouchableOpacity>
-          <Text> 40 laptops in-stock</Text>
-          </TouchableOpacity>
-
-
-         <TouchableOpacity>
-          <View
-            style={{
-              backgroundColor: '#dee2e6',
-              height: 27,
-              padding: 3,
-              borderRadius: 10,
-              flexDirection:"row",
-            }}>
-
-            <Text>Sort by{' '}</Text><FontAwesome name="chevron-down" size={16}/>
-            
-          </View>
+            <View
+              style={{
+                backgroundColor: '#dee2e6',
+                height: 27,
+                padding: 3,
+                borderRadius: 10,
+                flexDirection: 'row',
+              }}>
+              <Text>Sort by </Text>
+              <FontAwesome name="chevron-down" size={16} />
+            </View>
           </TouchableOpacity>
         </View>
-        
 
         <View
           style={{
@@ -185,6 +179,27 @@ export default function PopularProducts(params) {
                 </View>
               </TouchableOpacity>
             </View>
+
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
+              </TouchableOpacity>
+            </View>
           </View>
 
           <View
@@ -238,6 +253,26 @@ export default function PopularProducts(params) {
                     />
                   </View>
                 </View>
+              </TouchableOpacity>
+            </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -296,7 +331,7 @@ export default function PopularProducts(params) {
                         fontWeight: 'bolder',
                         textAlign: 'center',
                       }}>
-                      Hp gaming 
+                      Hp gaming
                     </Text>
 
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
@@ -314,6 +349,26 @@ export default function PopularProducts(params) {
                     </View>
                   </View>
                 </View>
+              </TouchableOpacity>
+            </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -369,6 +424,26 @@ export default function PopularProducts(params) {
                     />
                   </View>
                 </View>
+              </TouchableOpacity>
+            </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -427,7 +502,7 @@ export default function PopularProducts(params) {
                         fontWeight: 'bolder',
                         textAlign: 'center',
                       }}>
-                     Macbook Pro
+                      Macbook Pro
                     </Text>
 
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
@@ -445,6 +520,26 @@ export default function PopularProducts(params) {
                     </View>
                   </View>
                 </View>
+              </TouchableOpacity>
+            </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -484,7 +579,7 @@ export default function PopularProducts(params) {
                       textAlign: 'center',
                       fontWeight: 'bolder',
                     }}>
-                   Macbook Air
+                    Macbook Air
                   </Text>
                   <View style={{ flexDirection: 'row', marginTop: 10 }}>
                     <Text style={{ textAlign: 'center', marginLeft: 27 }}>
@@ -502,7 +597,26 @@ export default function PopularProducts(params) {
                 </View>
               </TouchableOpacity>
             </View>
-          </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
+              </TouchableOpacity>
+            </View>
         </View>
 
         <View
@@ -530,8 +644,6 @@ export default function PopularProducts(params) {
             />
           </TouchableOpacity>
 
-        
-
           <TouchableOpacity
             onPress={() => {
               navigation.navigate('cartlist');
@@ -539,17 +651,16 @@ export default function PopularProducts(params) {
             <FontAwesome
               name="shopping-bag"
               size={22}
-              style={{ marginRight: 10, }}
+              style={{ marginRight: 10 }}
             />
           </TouchableOpacity>
-
 
           <TouchableOpacity>
             <FontAwesome name="comments-o" size={28} style={{}} />
           </TouchableOpacity>
-
         </View>
-     
-    </View>
+        </View>
+        </ScrollView>
+      </View> 
   );
 }
