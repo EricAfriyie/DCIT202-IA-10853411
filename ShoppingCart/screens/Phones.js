@@ -48,15 +48,15 @@ export default function Phones(params) {
           <View
             style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
             <TouchableOpacity
-            onPress={() => {
-              navigation.navigate('cartlist');
-            }}>
-            <FontAwesome
-              name="shopping-bag"
-              size={22}
-              style={{ marginRight: 10,  }}
-            />
-          </TouchableOpacity>
+              onPress={() => {
+                navigation.navigate('cartlist');
+              }}>
+              <FontAwesome
+                name="shopping-bag"
+                size={22}
+                style={{ marginRight: 10 }}
+              />
+            </TouchableOpacity>
           </View>
         </View>
 
@@ -86,29 +86,24 @@ export default function Phones(params) {
             justifyContent: 'space-between',
             marginTop: 15,
           }}>
-
+          <TouchableOpacity>
+            <Text> 40 phones in-stock</Text>
+          </TouchableOpacity>
 
           <TouchableOpacity>
-          <Text> 40 phones in-stock</Text>
-          </TouchableOpacity>
-
-
-         <TouchableOpacity>
-          <View
-            style={{
-              backgroundColor: '#dee2e6',
-              height: 27,
-              padding: 3,
-              borderRadius: 10,
-              flexDirection:"row",
-            }}>
-
-            <Text>Sort by{' '}</Text><FontAwesome name="chevron-down" size={16}/>
-            
-          </View>
+            <View
+              style={{
+                backgroundColor: '#dee2e6',
+                height: 27,
+                padding: 3,
+                borderRadius: 10,
+                flexDirection: 'row',
+              }}>
+              <Text>Sort by </Text>
+              <FontAwesome name="chevron-down" size={16} />
+            </View>
           </TouchableOpacity>
         </View>
-        
 
         <View
           style={{
@@ -183,6 +178,26 @@ export default function Phones(params) {
                 </View>
               </TouchableOpacity>
             </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
+              </TouchableOpacity>
+            </View>
           </View>
 
           <View
@@ -236,6 +251,26 @@ export default function Phones(params) {
                     />
                   </View>
                 </View>
+              </TouchableOpacity>
+            </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -314,6 +349,26 @@ export default function Phones(params) {
                 </View>
               </TouchableOpacity>
             </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
+              </TouchableOpacity>
+            </View>
           </View>
 
           <View
@@ -367,6 +422,26 @@ export default function Phones(params) {
                     />
                   </View>
                 </View>
+              </TouchableOpacity>
+            </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -425,7 +500,7 @@ export default function Phones(params) {
                         fontWeight: 'bolder',
                         textAlign: 'center',
                       }}>
-                     HuaweiP20 Lite
+                      HuaweiP20 Lite
                     </Text>
 
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
@@ -443,6 +518,26 @@ export default function Phones(params) {
                     </View>
                   </View>
                 </View>
+              </TouchableOpacity>
+            </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -482,7 +577,7 @@ export default function Phones(params) {
                       textAlign: 'center',
                       fontWeight: 'bolder',
                     }}>
-                   Huawei Mate10 Lite
+                    HuaweiM10 Lite
                   </Text>
                   <View style={{ flexDirection: 'row', marginTop: 10 }}>
                     <Text style={{ textAlign: 'center', marginLeft: 27 }}>
@@ -498,6 +593,26 @@ export default function Phones(params) {
                     />
                   </View>
                 </View>
+              </TouchableOpacity>
+            </View>
+            <View
+              style={{
+                marginTop: 7,
+                backgroundColor: '#fd9843',
+                alignSelf: 'center',
+                borderRadius: 10,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}>
+                  Add to Cart
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -528,8 +643,6 @@ export default function Phones(params) {
             />
           </TouchableOpacity>
 
-        
-
           <TouchableOpacity
             onPress={() => {
               navigation.navigate('cartlist');
@@ -537,15 +650,13 @@ export default function Phones(params) {
             <FontAwesome
               name="shopping-bag"
               size={22}
-              style={{ marginRight: 10, }}
+              style={{ marginRight: 10 }}
             />
           </TouchableOpacity>
-
 
           <TouchableOpacity>
             <FontAwesome name="comments-o" size={28} style={{}} />
           </TouchableOpacity>
-
         </View>
       </ScrollView>
     </View>
